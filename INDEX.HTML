@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/ESTILOS/ESTILOS.CSS" type="text/css" media="screen">
   </head>
   <body>
       
@@ -15,7 +16,45 @@
 
     </header>
     <main>
-
+      <div class="contenedor" id="basemain">
+        <h3>Contacto</h3>
+        <div id="formulario" class="">
+          <form method="post">
+            <label for="name">Nombre</label>
+            <input type="text" id="nombre" name="name">
+            <br>
+            <p>
+            <input type="radio" name="rp" id="pas" value="pas"> Pasaporte 
+            <input type="radio" name="rp" id="pas" value="rut"> RUT
+            </p> 
+            <div id="rut">
+              <label for="rut">RUT</label>
+              <input type="text" id="rut" name="rut"> - <input type="text" id="Dverificador" name="dv" size="1">
+            </div>
+            <div>
+              <label for="pas">Nº Pasaporte</label>
+              <input type="text" id="pasaporte" name="pas">
+            </div>
+            <br>
+            <label for="fono">Telefono</label>
+            <input type="text" id="fono" name="fono">
+            <label for="ciudad">Ciudad de Residencia</label>
+            <select name="ciudad" size="1">
+              <option value="1">Iquique</option>
+              <option value="2">Arica</option>
+              <option value="3">Santiago</option>
+              <option value="4">Punta Arenas</option>
+              <option value="5">Puerto Montt</option>
+              <option value="6">Concepcion</option>
+            </select>
+            <br>
+            <label for="comentarios">Comentarios</label>
+            <textarea type="text" rows="5" cols="45"></textarea>
+            <br><br>
+            <button id="enviar"> Enviar</button> <input type="reset" value="Borrar">
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
         

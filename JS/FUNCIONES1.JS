@@ -29,3 +29,7 @@ var Fn = {
   });
 
 
+<<<<<<< HEAD
+=======
+  $().click(function)
+>>>>>>> 75bb9e2094746c26d6ebaff92af5bebf6ceae9c9
